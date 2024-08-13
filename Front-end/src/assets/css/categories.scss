@@ -1,0 +1,161 @@
+.container-categories {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 3rem;
+  padding: 2rem 4rem 4rem;
+}
+
+.wrapper {
+  transform: skew(-10deg);
+  transition: 0.25s;
+  position: relative;
+}
+
+.wrapper::before {
+  content: '';
+  left: 0;
+  top: 0;
+  height: calc(100% - 10px);
+  width: calc(100% - 10px);
+  border-radius: 40px;
+  opacity: 0;
+  border: 2px solid #ECE9E6;
+  position: absolute;
+  z-index: -1;
+  transition: 0.5s 0.05s;
+}
+
+.wrapper:hover::before {
+  opacity: 1;
+  transform: translateY(1.5rem) translateX(1.5rem);
+}
+
+.wrapper:nth-child(1) .card-categories::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('https://ik.imagekit.io/wgp1xe3yu/Home/spongjpg.jpg?updatedAt=1723117767057');
+  background-size: cover;
+  background-color: #373F51;
+  background-blend-mode: screen;
+  transform: skew(10deg) scale(1.2);
+  transition: 0.25s;
+}
+
+/* Repeat similar styling for other nth-child selectors */
+.wrapper:nth-child(2) .card-categories::after {
+  content: 'hello';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('https://ik.imagekit.io/wgp1xe3yu/Home/file.png?updatedAt=1723093540971');
+  background-size: cover;
+  background-color: #373F51;
+  background-blend-mode: screen;
+  transform: skew(10deg) scale(1.2);
+  transition: 0.25s;
+}
+
+.wrapper:nth-child(3) .card-categories::after {
+  content: 'hello';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('https://ik.imagekit.io/wgp1xe3yu/Home/yoga');
+  background-size: cover;
+  background-color: #373F51;
+  background-blend-mode: screen;
+  transform: skew(10deg) scale(1.2);
+  transition: 0.25s;
+}
+
+.wrapper:nth-child(4) .card-categories::after {
+  content: 'hello';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('https://ik.imagekit.io/wgp1xe3yu/Home/trainer?updatedAt=1723216146961');
+  background-size: cover;
+  background-color: #373F51;
+  background-blend-mode: screen;
+  transform: skew(10deg) scale(1.2);
+  transition: 0.25s;
+}
+
+.wrapper:nth-child(5) .card-categories::after {
+  content: 'hello';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('https://ik.imagekit.io/wgp1xe3yu/Home/personal?updatedAt=1723216384714');
+  background-size: cover;
+  background-color: #373F51;
+  background-blend-mode: screen;
+  transform: skew(10deg) scale(1.2);
+  transition: 0.25s;
+}
+
+.wrapper:nth-child(6) .card-categories::after {
+  content: 'hello';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('https://ik.imagekit.io/wgp1xe3yu/Home/pexels-vanmalidate-769289.jpg?updatedAt=1723218643195');
+  background-size: cover;
+  background-color: #373F51;
+  background-blend-mode: screen;
+  transform: skew(10deg) scale(1.2);
+  transition: 0.25s;
+}
+
+.wrapper:hover {
+  transform: translateX(-1rem) translateY(-1rem) skew(-10deg);
+}
+
+.wrapper:hover .card-categories::after {
+  background-blend-mode: normal;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.card-categories {
+  background-color: white;
+  border-radius: 40px;
+  height: 15rem;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-categories::after {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fal {
+  position: absolute;
+  bottom: -1rem;
+  right: 3rem;
+  border-radius: 100%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: #373F51;
+  z-index: 1;
+  transform: skew(10deg) translateY(50%);
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: 0.25s;
+}

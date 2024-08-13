@@ -1,0 +1,27 @@
+.card-Slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: row; */
+    margin-top: 5rem;
+    width: 90%;
+    height: 20rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.CS1{
+    display: flex;
+    flex-direction: column;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    /* margin-right: 1200px; */
+    border-radius: 10px;
+}
+.text-CS{
+    /* margin-right: 1rem; */
+}

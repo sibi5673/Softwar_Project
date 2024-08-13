@@ -1,0 +1,56 @@
+/* footbar */
+.foot{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ali{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-direction: row;
+}
+.foot1 h3{
+	margin-left: 2rem;
+}
+.foot1 ul{
+	flex-direction: column;
+	/* padding-top: ; */
+}
+.foot1 li{
+	margin-left: -0.5rem;
+	/* font-weight: bold; */
+	margin-bottom: 1rem;
+	padding-top: 1rem;
+	text-decoration: none;
+	display: flex;
+	justify-content: start;
+	flex-direction: row;
+}
+.foot2 ul{
+	flex-direction: column;
+	/* padding-top: ; */
+}
+.foot2 li{
+	margin-left: -0.5rem;
+	/* font-weight: bold; */
+	margin-bottom: 1rem;
+	padding-top: 1rem;
+	padding: 1.3rem;
+	text-decoration: none;
+	display: flex;
+	justify-content: start;
+	flex-direction: row;
+}
+.foot3 li{
+	margin-left: -0.5rem;
+	/* font-weight: bold; */
+	margin-bottom: 1rem;
+	padding-top: 1rem;
+	padding: 1.3rem;
+	text-decoration: none;
+	display: flex;
+	justify-content: start;
+	flex-direction: row;
+}
